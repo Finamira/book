@@ -1,0 +1,44 @@
+Site qui affiche des images/photos agrémentés de légers textes/légendes qui sont postées par des utilisateurs
+Yao : contenus, administration - front office majoritairement.
+Adrien : Html, css - front office
+Pierre : php, js, base de données - back office majoritairement.
+
+liste des fonctionnalités du site : 
+- une barre de navigation : contient les catégories.-> done
+- affichage des articles - affichage en fonction de la catégorie. ->done
+- commentaires par articles
+- gestion des utilisateurs/ des rôles
+- gestion des notes des articles
+- tri des articles dans la recherche : par note, par date de publication, par mots clés, par utilisateur.
+- insertion des données : inscription d'un utilisateur, d'articles et de commentaires.
+
+Arborescence :
+page de gestion, omniprésentes sauf dans l'index.
+admin : gère toutes les interractions entre tous les types d'utilisateurs et 
+la BDD. Conditionnement par id_role.
+function : contient toutes les fonctions.
+
+Affichage,
+index : page d'acceuil.
+categorie : page de catégorie avec affichage d'une liste d'article
+article : page d'article avec tout le contenu d'un article, ses commentaires et ses notes.
+user : page utilisateur contenant les articles et les informations d'un utilisateur// dashboard
+menu : présente sur toutes les pages
+
+
+
+fonctionnement:
+Arrivée sur l'index : connexion ou inscription/ restreindre l'utilisteur à deux options
+-> si connexion, accès à trois pages : 
+- menu, en navigation. -> renvoies au catégories/article
+- dashboard, en section. -> affiche tous les articles par date
+- admin, en div cachée accessible via JQuery
+-> sinon, connection à la page inscription puis renvoi sur l'index.
+
+au total 6 pages : 
+index, qui contient toutes les pages.
+connexion, qui gère les connexions et les incriptions.
+menu, qui gère la navigation.
+dashboard, qui est la page principale après l'index.
+categorie et articles, qui gèrent l'affichage des articles et des catégories.
+admin, qui gère toutes les interfaces de modificaion avec la base de données.

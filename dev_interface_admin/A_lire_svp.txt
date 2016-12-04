@@ -1,0 +1,5 @@
+Notes pour mr.Chamak.
+Comme vous me l'aviez indiqué en fin de cours lors de notre précédent TP,
+j'ai placé les dossiers du front office dans la racine.
+Cependant, pour coserver de la clarté entre font office et back office,
+j'ai conservé le dossier back office
