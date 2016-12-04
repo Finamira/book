@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- Document réalisé par Pierre Alberti -->
+<html>
+
+<head>
+	<!-- Reprendre tout le Head-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="keywords" content="Pierre, Alberti, CV, présentation, contact, activités">
+	<meta name="description" content="site d'un étudiant qui présente ses travaux">
+	<title>Finara</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">	
+	<link rel="icon" href="../img/favicon.ico">
+	<link rel="icon" type="image/png" href="../img/07.png">	
+	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<!-- Navigation, commune à toutes les pages -->
+	<div id="navigation">
+		<nav>
+			<ul id="menu">
+				<li id="informations">
+					<button id="infos">Présentation</button>
+				</li>
+				<li id="realisations">
+					<button id="imags">Réalisations</button>
+				</li>
+				<li id="calls">
+					<button id="contact"> Me contacter</button>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<!-- Partie d'acceuil/lien -->
+	<div id="home">
+		<header>
+			<div id="title">
+				<h1>Pierre Alberti</h1>
+				<div id="trait"></div>
+				<p id="soustitre">Le site d'un étudiant</p>
+			</div>
+		</header>
+	</div>
+	<!-- Partie présentation -->
+	<div id="information">
+		<section>
+			<button class="redirect">Pierre Alberti</button>
+			<div id="content">
+				<ul id="cat">
+					<li id="intro" tabindex="-1">
+						<h2>Qui suis-je ?</h2>
+						<p class="texte">Bonjour !
+							<br>Comme dit dans le titre du site juste au dessus, je suis Pierre Alberti, un étudiant de 18 ans (presque 19). J'apprécie la création artistique (cf. la partie "Réalisations"), je dessine, la peint, crée des origami, etc. J'aime aussi l'intégration web, qui est pour moi une manière de créer sans forcément le faire de mes propres mains, mais plus avec des idées et une bonne dose de langages (Html, Java, CSS). Outre la création graphique et web, j'aime passer du temps avec mes amis et travailler avec eux en parallèle sur plusieurs projets (cf. ce site).
+							<br>On se retrouve dans la partie "Ce que je fais" !</p>
+					</li>
+					<li id="activ" tabindex="-2">
+						<h2>Ce que je fais</h2>
+						<p class="texte">Je suis en première année du DUT Métiers du Multimédia et de l'Internet (MMI pour les intimes). C'est une formation très polyvalente qui contient entre autres de l’infographie, de l'audiovisuel, de la programmation, du réseau, de l'intégration web, du signal et de la communication. La formation peut parfois sembler très lourde, notamment au niveau des horaires, mais le fait qu'elle soit généraliste nous permet de nous orienter plus facilement pour l'avenir. Au sein de cette formation, j'ai pu découvrir différentes choses comme les bases de données, le PHP, la photographie et la vidéo, l'administration de réseaux et la communication écrite et orale. En avant pour mes expériences professionnelles !</p>
+					</li>
+					<li id="cv" tabindex="-3">
+						<h2>Expériences professionelles</h2>
+						<p class="texte">A ce jour, je n'ai eu que deux expériences dans le monde du travail. La première date de 2010, où j'ai réalisé un stage d'observation en entreprise dans le Centre d’économie Rurale (CER) des Hautes-Pyrénées à Tarbes. Le CER est une entreprise d'experts comptables. J'y suivait les activités d'un conseiller en création d’entreprise.
+							<br>Ma seconde expérience professionnelle s'est déroulée du 8 février 2016 au 25 février 2016 au Pôle Foudre ABB France à Bagnères de Bigorre. J'étais chargé de prendre des photos de produits pour alimenter une base de donnée. Cette expérience m'a appris d'importantes notions de gestion de projets comme la gestion de délais et l'organisation des ressources.</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+	<!-- Partie Réalisations -->
+	<div id="album">
+		<button class="redirect">Pierre Alberti</button>
+		<ul id="creations">
+			<li id="matri" tabindex="-1">
+				<h2>Matricielle</h2><img id="pict1" src="img/02.jpg" alt="reverted">
+			</li>
+			<li id="vecto" tabindex="-2">
+				<h2>Vectorielle</h2><img id="pict2" src="img/03.png" alt="logo">
+			</li>
+			<li id="photo" tabindex="-3">
+				<h2>Photographique</h2><img id="pict3" src="img/04.jpg" alt="cow">
+			</li>
+			<li id="pro" tabindex="-4">
+				<h2>Libre</h2><img id="pict4" src="img/05.png" alt="crow">
+			</li>
+			<li id="autre" tabindex="-5">
+				<h2>Informations</h2><p class="texte">Ces réalisations sont personelles.
+				La réalisation vectorielle est ma canditaure au logo MMI 2016 et la création photographique fut conçue lors d'un reportage photo dans le cadre de mes études</p>
+				
+			</li>
+		</ul>
+	</div>
+	<!-- Partie Contact -->
+	<div id="contacts">
+		<button class="redirect">Pierre Alberti</button>
+		<form method="post" enctype="text/plain" action="mailto:akikohorizon@gmail.com">
+			<fieldset>
+				<legend>Me contacter</legend>
+				<table>
+					<tr>
+						<td class="champ">Nom : </td>
+						<td>
+							<input class="champs" type="text" name="nom" title="Insérer nom" placeholder="Nom">
+						</td>
+					</tr>
+					<tr>
+						<td class="champ">Prénom : </td>
+						<td>
+							<input class="champs" type="text" name="prenom" title="Insérer Prénom" placeholder="Prénom">
+						</td>
+					</tr>
+					<tr>
+						<td class="champ">Mail : </td>
+						<td>
+							<input class="champs" type="text" name="mail" title="Insérer votre mail" placeholder="XXX@xxx;com">
+						</td>
+					</tr>
+					<tr>
+						<td class="champ">Origine : </td>
+						<td>
+							<input class="champs" type="text" name="site" title="Insérer votre site" placeholder="De quel domaine vous provenez">
+						</td>
+					</tr>
+					<tr>
+						<td class="champ">Motif :</td>
+						<td>
+							<input class="champs" type="text" name="motif" title="Insérer votre motif" placeholder="Motif du message">
+						</td>
+					</tr>
+					<tr>
+						<td class="champ">Message :</td>
+						<td>
+							<textarea class="champs" name="textarea" rows="5" cols="30" placeholder="Votre message"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input id="reset" type="reset" name="reset" class="bouton">
+						</td>
+						<td id="world">
+							<input type="submit" name="submit" class="bouton">
+						</td>
+					</tr>
+					<tr>
+						<td class="champ" id="link">Télécharger mon cv</td>
+						<td><a href ="https://drive.google.com/file/d/0B0Gs7K8H9qyjck1KWW9uYkZITFk/view?usp=sharing">Ici (en anglais)</a></td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+	</div>
+</body>
+
+</html>
+<!-- Document HTML réalisé par Pierre Alberti -->
